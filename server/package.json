@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server side code for the tab tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec \"npm run lint && node\"",
+    "lint": "./node_modules/.bin/eslint \"**/*.js\""
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "eduarmreyes",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eslint": "^6.0.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-vue": "^5.2.3"
+  }
+}
